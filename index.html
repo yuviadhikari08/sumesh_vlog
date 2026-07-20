@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUMESH — TheSumesh_Vlogs | Travel Vlogger & Lifestyle Creator</title>
+<meta name="description" content="SUMESH (TheSumesh_Vlogs) — Digital creator, travel vlogger and lifestyle creator from Uttarakhand, India. Capturing stories, creating memories and inspiring people through travel and content creation.">
+<meta name="theme-color" content="#F8FAFC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Mouse follow glow -->
+<div class="mouse-glow" aria-hidden="true"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__logo">Sumesh<span class="dot">.</span></a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#home" data-fade="up">Home</a>
+      <a href="#about" data-fade="up">About</a>
+      <a href="#timeline" data-fade="up">Journey</a>
+      <a href="#gallery" data-fade="up">Gallery</a>
+      <a href="#videos" data-fade="up">Videos</a>
+      <a href="#social" data-fade="up">Socials</a>
+      <a href="#contact" data-fade="up" class="navbar__cta">Contact</a>
+    </nav>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== SOCIAL SIDEBAR ===================== -->
+<aside class="social-sidebar" aria-label="Social media links">
+  <a href="#" class="social-pill" data-name="Instagram">
+    <span class="social-pill__icon">
+      <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6ZM17.4 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+    </span>
+    <span class="social-pill__label">@TheSumesh_Vlogs</span>
+  </a>
+  <a href="#" class="social-pill" data-name="YouTube">
+    <span class="social-pill__icon">
+      <svg viewBox="0 0 24 24"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4h0s-3.9 0-6.7.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.8v1.4C2.2 14 2.4 15.8 2.4 15.8s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.6.2 6.5.2 6.5.2s3.9 0 6.7-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.6v-1.4c0-1.8-.2-3.6-.2-3.6ZM9.9 14.6V8.8l5.4 2.9-5.4 2.9Z"/></svg>
+    </span>
+    <span class="social-pill__label">TheSumesh_Vlogs</span>
+  </a>
+  <a href="#" class="social-pill" data-name="Facebook">
+    <span class="social-pill__icon">
+      <svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.5-3h-2.9V9.1c0-.9.2-1.5 1.5-1.5h1.5V5c-.7-.1-1.6-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3V11H7.1v3h2.7v7h3.7Z"/></svg>
+    </span>
+    <span class="social-pill__label">TheSumesh_Vlogs</span>
+  </a>
+  <a href="mailto:hello@thesumeshvlogs.com" class="social-pill" data-name="Email">
+    <span class="social-pill__icon">
+      <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8 8.5-6.4A1 1 0 0 0 19.7 6H4.3a1 1 0 0 0-.8.6L12 13Z"/></svg>
+    </span>
+    <span class="social-pill__label">hello@thesumeshvlogs.com</span>
+  </a>
+  <a href="https://wa.me/910000000000" class="social-pill" data-name="WhatsApp">
+    <span class="social-pill__icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.3.7-1.6 1.4-2.2 1.4-.6.1-1.3.1-2.1-.1-.5-.1-1.1-.3-1.9-.7-3.3-1.4-5.4-4.8-5.6-5-.2-.2-1.3-1.7-1.3-3.3 0-1.6.8-2.3 1.1-2.6.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .7.5.3.6 1 2.1 1 2.3.1.2.1.4 0 .6-.1.2-.2.3-.4.5l-.5.6c-.2.2-.3.4-.1.7.2.3 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.3.1.2.1.9-.2 1.6Z"/></svg>
+    </span>
+    <span class="social-pill__label">Chat on WhatsApp</span>
+  </a>
+</aside>
+
+<main id="home">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__peaks" aria-hidden="true">
+      <svg viewBox="0 0 1440 300" preserveAspectRatio="none">
+        <path class="peak peak--back" d="M0 300 L120 160 L260 240 L420 90 L600 220 L760 120 L940 250 L1120 140 L1300 230 L1440 170 L1440 300 Z"/>
+        <path class="peak peak--front" d="M0 300 L180 220 L340 270 L520 180 L680 260 L880 190 L1060 270 L1260 200 L1440 260 L1440 300 Z"/>
+      </svg>
+    </div>
+    <div class="hero__particles" id="particles" aria-hidden="true"></div>
+    <div class="hero__glass-overlay" aria-hidden="true"></div>
+
+    <div class="hero__content reveal" data-fade="up">
+      <p class="hero__greeting">Hello <span class="wave">👋</span></p>
+      <h1 class="hero__name">
+        <span class="hero__name-pre">I'm</span>
+        <span class="hero__name-main">SUMESH</span>
+      </h1>
+      <p class="hero__brand">TheSumesh_Vlogs</p>
+      <p class="hero__typing">
+        <span id="typingText"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero__tagline">A storyteller capturing moments through travel, creativity and digital experiences.</p>
+
+      <div class="hero__buttons">
+        <a href="#gallery" class="btn btn--glass btn--primary ripple">Explore Portfolio</a>
+        <a href="#videos" class="btn btn--glass btn--ghost ripple">Watch My Content</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">About Me</p>
+      <h2 class="section-title reveal" data-fade="up">The person behind the lens</h2>
+
+      <div class="about__grid">
+        <div class="about__photo-wrap reveal" data-fade="left">
+          <div class="glass-card about__photo-card tilt">
+            <div class="about__photo" role="img" aria-label="Portrait of Sumesh">
+              <span class="about__photo-initial"></span>
+            </div>
+            <div class="about__photo-badge">📍 Uttarakhand, India</div>
+          </div>
+        </div>
+
+        <div class="about__text reveal" data-fade="right">
+          <p class="about__intro">
+            I'm Sumesh, the face behind <strong>TheSumesh_Vlogs</strong> — a travel vlogger and lifestyle
+            creator based in the mountains of Uttarakhand. What started as a way to remember my own
+            journeys has grown into a small community of people who travel through my eyes every week.
+          </p>
+          <p class="about__intro">
+            I believe the best stories are unscripted — a sunrise over the ridgeline, a conversation with
+            a stranger who becomes a friend, the quiet between two big moments. My work lives at the
+            intersection of travel, storytelling and craft.
+          </p>
+
+          <div class="skills">
+            <div class="skill" data-percent="95">
+              <div class="skill__head"><span>Content Creation</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+            <div class="skill" data-percent="90">
+              <div class="skill__head"><span>Photography</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+            <div class="skill" data-percent="88">
+              <div class="skill__head"><span>Video Editing</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+            <div class="skill" data-percent="97">
+              <div class="skill__head"><span>Travel</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+            <div class="skill" data-percent="92">
+              <div class="skill__head"><span>Storytelling</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+            <div class="skill" data-percent="85">
+              <div class="skill__head"><span>Social Media Marketing</span><span class="skill__num">0%</span></div>
+              <div class="skill__bar"><div class="skill__fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section class="section timeline-section" id="timeline">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">The Journey</p>
+      <h2 class="section-title reveal" data-fade="up">From first frame to full-time creator</h2>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__year">Year 1</span>
+            <h3>Started Creating Content</h3>
+            <p>Picked up a phone camera and began documenting everyday travel around home.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__year">Year 1.5</span>
+            <h3>100 Subscribers</h3>
+            <p>A small but loyal community started showing up for every upload.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__year">Year 2</span>
+            <h3>Travel Vlogs</h3>
+            <p>Shifted focus to full travel vlogs across Uttarakhand's valleys and trails.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__year">Year 3</span>
+            <h3>Instagram Growth</h3>
+            <p>Short-form content took off, growing the audience far beyond the home base.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__year">Year 3.5</span>
+            <h3>Brand Collaborations</h3>
+            <p>Partnered with travel and lifestyle brands aligned with an authentic voice.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-fade="up">
+          <div class="timeline__dot"></div>
+          <div class="glass-card timeline__card timeline__card--future">
+            <span class="timeline__year">What's Next</span>
+            <h3>Future Goals</h3>
+            <p>A travel docu-series, a creator community, and stories from beyond the Himalayas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">Portfolio</p>
+      <h2 class="section-title reveal" data-fade="up">Gallery</h2>
+
+      <div class="gallery__filters reveal" data-fade="up">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="photography">Photography</button>
+      </div>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <!-- Populated by JS for masonry-friendly markup, but base items below for no-JS fallback -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED VIDEOS ===================== -->
+  <section class="section videos-section" id="videos">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">Watch</p>
+      <h2 class="section-title reveal" data-fade="up">Featured Videos</h2>
+
+      <div class="videos__grid" id="videosGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOCIAL HIGHLIGHT ===================== -->
+  <section class="section social-section" id="social">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">Find Me Online</p>
+      <h2 class="section-title reveal" data-fade="up">Let's stay connected</h2>
+
+      <div class="social-cards">
+        <div class="glass-card social-card social-card--ig reveal" data-fade="up">
+          <div class="social-card__top">
+            <div class="social-card__avatar">S</div>
+            <div>
+              <h3>Instagram</h3>
+              <p>@TheSumesh_Vlogs</p>
+            </div>
+          </div>
+          <div class="social-card__stats">
+            <div><span class="counter" data-count="184000">0</span><label>Followers</label></div>
+            <div><span class="counter" data-count="620">0</span><label>Posts</label></div>
+          </div>
+          <a href="#" class="btn btn--glass btn--small ripple">Follow</a>
+        </div>
+
+        <div class="glass-card social-card social-card--yt reveal" data-fade="up">
+          <div class="social-card__top">
+            <div class="social-card__avatar">S</div>
+            <div>
+              <h3>YouTube</h3>
+              <p>TheSumesh_Vlogs</p>
+            </div>
+          </div>
+          <div class="social-card__stats">
+            <div><span class="counter" data-count="92000">0</span><label>Subscribers</label></div>
+            <div><span class="counter" data-count="210">0</span><label>Videos</label></div>
+          </div>
+          <a href="#" class="btn btn--glass btn--small ripple">Subscribe</a>
+        </div>
+
+        <div class="glass-card social-card social-card--fb reveal" data-fade="up">
+          <div class="social-card__top">
+            <div class="social-card__avatar">S</div>
+            <div>
+              <h3>Facebook</h3>
+              <p>TheSumesh_Vlogs</p>
+            </div>
+          </div>
+          <div class="social-card__stats">
+            <div><span class="counter" data-count="45000">0</span><label>Followers</label></div>
+            <div><span class="counter" data-count="980">0</span><label>Posts</label></div>
+          </div>
+          <a href="#" class="btn btn--glass btn--small ripple">Visit Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATISTICS ===================== -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal" data-fade="up">
+          <span class="counter stat__num" data-count="620">0</span>
+          <p>Posts</p>
+        </div>
+        <div class="stat reveal" data-fade="up">
+          <span class="counter stat__num" data-count="184000">0</span>
+          <p>Followers</p>
+        </div>
+        <div class="stat reveal" data-fade="up">
+          <span class="counter stat__num" data-count="210">0</span>
+          <p>Videos</p>
+        </div>
+        <div class="stat reveal" data-fade="up">
+          <span class="counter stat__num" data-count="92000">0</span>
+          <p>Subscribers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COLLAB CTA ===================== -->
+  <section class="section collab-section">
+    <div class="container">
+      <div class="glass-card collab-card reveal" data-fade="up">
+        <h2>Let's Create Something Amazing Together</h2>
+        <p>Open to travel campaigns, brand stories and on-location content collaborations.</p>
+        <div class="hero__buttons">
+          <a href="#contact" class="btn btn--glass btn--primary ripple">Contact Me</a>
+          <a href="#contact" class="btn btn--glass btn--ghost ripple">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <p class="eyebrow reveal" data-fade="up">Get In Touch</p>
+      <h2 class="section-title reveal" data-fade="up">Start a conversation</h2>
+
+      <form class="glass-card contact-form reveal" data-fade="up" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="name" name="name" required placeholder=" ">
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" required placeholder=" ">
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <input type="text" id="subject" name="subject" required placeholder=" ">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="field field--full">
+          <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn btn--glass btn--primary ripple field--full">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="navbar__logo">Sumesh<span class="dot">.</span></a>
+
+    <nav class="footer__links">
+      <a href="#about">About</a>
+      <a href="#timeline">Journey</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="YouTube">YT</a>
+      <a href="#" aria-label="Facebook">FB</a>
+    </div>
+  </div>
+  <p class="footer__copy">© <span id="year"></span> TheSumesh_Vlogs. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
